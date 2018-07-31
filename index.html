@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/socket.io.js"></script>
+    <link rel="shortcut icon" href="assets/icon.png" />
+</head>
+
+<body>
+    <div id="main">
+        <h1>聊天室</h1>
+        <div id="content">
+            <div id="login" style="display: none;">
+                <input type="text" placeholder="用户名" id="username">
+                <button class="loginBtn btn">登录</button>
+            </div>
+            <table id="chat">
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="send">
+            <textarea class="typein" autofocus="" wrap="virtual" title="按Ctrl+Enter直接发送"></textarea>
+            <button class="typeBtn btn">发送</button>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
